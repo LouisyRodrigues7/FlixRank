@@ -1,0 +1,254 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0a0a12;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #1a1a2e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.logo-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.logo-container img {
+    height: 40px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    display: block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 150px;
+    text-align: left;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 8px 10px;
+}
+
+.menu ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+main {
+    padding-top: 120px;
+    max-width: 600px;
+    margin: auto;
+    flex-grow: 1;
+}
+
+section {
+    display: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#welcome {
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc00;
+    display: inline-block;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.welcome-icon {
+    width: 170px; /* Aumento de 35% */
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.filmes-container, .series-container, .favoritos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #222;
+    padding: 6px; /* Reduzido em mais 25% */
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 45%; /* Ajuste para exibição lado a lado */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(255, 204, 0, 0.4);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 8px 0;
+    font-size: 18px; /* Aumento da fonte para melhor leitura */
+    line-height: 1.6;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: #222;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+#avaliar h2 {
+    margin-bottom: 30px;
+}
+
+#avaliar p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: center;
+}
+
+footer {
+    background-color: #1a1a2e;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+    border-top: 3px solid #ffcc00;
+}
+
+footer p {
+    font-size: 16px;
+    color: white;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .filmes-container, .series-container, .favoritos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%; /* Ajuste proporcional para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 85%;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flix Rank</title>
+    
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Ícones para PWA -->
+    <link rel="icon" type="image/png" sizes="144x144" href="icons/icon_144x144.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon_192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icons/icon_512x512.png">
+
+    <!-- Manifesto para PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Cor da barra de navegação no mobile -->
+    <meta name="theme-color" content="#000000">
+
+    <!-- Link para o JavaScript -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container" id="logo">
+            <img src="img/rank.png" alt="Flix Rank Logo">
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#" data-section="welcome">Tela Inicial</a></li>
+                <li><a href="#" data-section="filmes">Filmes</a></li>
+                <li><a href="#" data-section="series">Séries</a></li>
+                <li><a href="#" data-section="favoritos">Favoritos</a></li>
+                <li><a href="#" data-section="avaliar">Avaliar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tela Inicial -->
+        <section id="welcome">
+            <img src="img/teatro.png" alt="Ícone Teatro" class="welcome-icon">
+            <h2>Bem-vindo ao Flix Rank</h2>
+            <p>Este é o meu cantinho para compartilhar críticas sinceras sobre os filmes e séries que estou assistindo. Aqui, você vai encontrar minhas opiniões pessoais, repletas de insights sobre enredos, atuações e aquele toque especial que cada história traz. Se você também adora cinema e séries, este é o lugar perfeito para descobrir novas opções e, quem sabe, até discordar de algumas das minhas escolhas! 😊</p>
+            <p>Navegue, explore e se inspire. E, claro, sinta-se à vontade para compartilhar suas próprias opiniões também!</p>
+        </section>
+
+        <section id="filmes">
+            <h2>Filmes</h2>
+            <div class="card">
+                <img src="img/nosatt.jpg" alt="Nós">
+                <p>Um filme espetacular, com um final muito curioso, que dá aquela vontade de reassistir para captar todos os detalhes com uma nova percepção. Nós surpreende com sua atmosfera tensa, simbolismos instigantes e uma trama que prende do começo ao fim.</p>
+                <a href="https://www.youtube.com/watch?v=fQ19DupGfzk&t=1s" target="_blank">
+                    <button>Veja o trailer</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/corraatt.jpg" alt="Get Out">
+                <p>É um suspense inteligente e envolvente, com críticas afiadas e uma tensão crescente. Cheio de detalhes que valem uma segunda assistida e entrega um final marcante.</p>
+                <a href="https://www.youtube.com/watch?v=mDGV5UucTu8" target="_blank">
+                    <button>Veja o trailer</button>
+                </a>
+            </div>
+        </section>
+
+        <section id="series">
+            <h2>Séries</h2>
+            <div class="card">
+                <img src="img/sens8att.jpg" alt="Sense8">
+                <p>Sense8 é uma série intensa e emocionante, com personagens cativantes e uma conexão única. Demora a engatar, mas quando pega o ritmo, prende de verdade. Cheia de momentos marcantes, tem coração e uma trilha sonora incrível.</p>
+                <a href="https://www.youtube.com/watch?v=VX-TnKoivR8" target="_blank">
+                    <button>Veja o trailer</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/ginnyatt.jpg" alt="Ginny & Georgia">
+                <p>É uma série viciante, cheia de drama, mistério e momentos leves que equilibram bem a trama. Os personagens são cativantes, e a história traz reviravoltas que prendem do começo ao fim. Com diálogos afiados e temas profundos, é daquelas séries que te fazem maratonar sem perceber.</p>
+                <a href="https://www.youtube.com/watch?v=Kc0XVYWIadA" target="_blank">
+                    <button>Veja o trailer</button>
+                </a>
+            </div>
+        </section>
+
+        <section id="favoritos">
+            <h2>Favoritos</h2>
+            <div class="card">
+                <img src="img/orphanatt.jpg" alt="Orphan Black">
+                <p>Uma série eletrizante, cheia de mistério e reviravoltas. O grande destaque é a atuação impressionante de Tatiana Maslany, que interpreta personagens distintos com incrível naturalidade. A trama fica cada vez mais intrigante, impossível de parar de assistir.</p>
+                <a href="https://www.youtube.com/watch?v=Z4RQIwQyqBY" target="_blank">
+                    <button>Veja o trailer</button>
+                </a>
+            </div>
+            <div class="card">
+                <img src="img/sexatt.jpg" alt="Sex Education">
+                <p>Uma série divertida e sincera, com personagens incríveis. Mistura comédia e drama de forma leve, abordando temas importantes sem tabus. Com atuações fantásticas e roteiros afiados, é impossível não se apaixonar pela história e pela evolução dos personagens.</p>
+                <a href="https://www.youtube.com/watch?v=Hd2ldTR-WpI" target="_blank">
+                    <button>Veja o trailer</button>
+                </a>
+            </div>
+        </section>
+
+        <section id="avaliar">
+            <h2>Avaliar</h2>
+            <p>Agora é sua vez! Indique um filme ou série que você ama.</p>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="title">Nome do filme/série:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="review">Avaliação:</label>
+                <textarea id="review" name="review" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Louisy Marcelle Rodrigues | <a href="mailto:louisy.marcelle@gmail.com">Entre em contato</a></p>
+    </footer>
+</body>
+</html>
