@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Esconde todas as seções, exceto a tela de boas-vindas
     sections.forEach(section => {
         if (section.id !== "welcome") {
-            section.style.display = "none";
+            section.style.display = "none"; // função para ocultar iten e so aparecer quando solicitar
         }
     });
     

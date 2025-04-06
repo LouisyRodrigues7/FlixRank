@@ -124,7 +124,7 @@ h2 {
 }
 
 .welcome-icon {
-    width: 170px; /* Aumento de 35% */
+    width: 170px; 
     display: block;
     margin: 0 auto 20px;
 }
@@ -138,19 +138,19 @@ h2 {
 
 .card {
     background-color: #222;
-    padding: 6px; /* Reduzido em mais 25% */
+    padding: 6px; 
     margin-bottom: 12px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     text-align: left;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    width: 45%; /* Ajuste para exibição lado a lado */
+    width: 45%; 
     margin-left: auto;
     margin-right: auto;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.0);
     box-shadow: 0px 8px 15px rgba(255, 204, 0, 0.4);
 }
 
@@ -161,7 +161,7 @@ h2 {
 
 .card p {
     margin: 8px 0;
-    font-size: 18px; /* Aumento da fonte para melhor leitura */
+    font-size: 18px; 
     line-height: 1.6;
 }
 
